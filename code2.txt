@@ -1,0 +1,208 @@
+﻿import os
+pathProg =  'yourpath'
+os.chdir(pathProg)
+
+if os.getcwd() != pathProg:
+    print ("EROR: the file path incorrect.")
+    sys.exit()
+import copy
+import numpy as np
+from scipy.sparse import csc_matrix
+import lightgbm as lgb
+import pandas as pd
+from sklearn.grid_search import GridSearchCV 
+from sklearn.metrics import roc_auc_score, make_scorer
+from pandas.core.frame import DataFrame
+from sklearn.grid_search import GridSearchCV
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split,StratifiedKFold
+print('Load data...')
+data = pd.read_csv('A4620.csv')  
+
+trainx=data.iloc[:52518,:4620]
+
+
+Y = pd.read_csv('ind.csv', header=None)  
+trainy=Y.iloc[:52518,1]
+
+lgb_train = lgb.Dataset(trainx, trainy)
+# Set params
+params = {'boosting_type': 'gbdt',
+          'max_depth' : -1,
+          'objective': 'binary', 
+          'num_leaves': 128,
+          'learning_rate': 0.01, 
+          'subsample': 0.8, 
+          'colsample_bytree': 0.8, 
+          'min_data_in_leaf':50,
+          'is_unbalance': True,
+          'scale_pos_weight': 1,
+          'num_class' : 1,
+          'metric' : 'auc'}
+
+num_round=3000
+
+X_train, X_test, y_train, y_test = train_test_split(trainx, trainy, test_size=0.2) #切兩等份       
+train_data = lgb.Dataset(X_train, label=y_train)
+test_data = lgb.Dataset(X_test, label=y_test)
+bst = lgb.train(params, train_data, num_round, valid_sets=test_data, early_stopping_rounds=50)
+
+
+print('Plot feature importances...')
+ax = lgb.plot_importance(bst)
+featureArray=bst.feature_importance()
+featureArray = np.argsort(-featureArray) #返回重要程度的索引值
+featureArray=featureArray[:600] #取前600
+A600=data.iloc[:,featureArray]
+A600.to_csv('A600.csv',index=False) #儲存前600重要的特徵
+
+data=A600
+trainx=data.iloc[:52518,:600]
+testx=data.iloc[52518:,:600]
+
+#取前600重要特徵 找尋最佳化LightGBM之參數
+mdl = lgb.LGBMClassifier(
+          boosting_type='gbdt',
+          max_depth=-1,
+          objective='binary', 
+          num_leaves=128, 
+          learning_rate=0.01, 
+          subsample=0.8, 
+          colsample_bytree=0.8, 
+          min_data_in_leaf=50,
+          scale_pos_weight=1,
+          num_class=1,
+          is_unbalance=True,
+          metric='auc',
+          )
+
+# Create parameters to search
+gridParams = {
+    'num_leaves': [128,256,512,1024],
+    'min_data_in_leaf': [50,100,200,400,600],
+    'max_depth':[-1],
+    'n_estimators':[100,300,500,700]
+    }
+
+# Create the grid
+grid = GridSearchCV(mdl, gridParams, 
+                    verbose=5, 
+                    cv=5, 
+                    scoring='roc_auc')
+# Run the grid
+grid.fit(trainx, trainy)
+#Show best parameters
+grid.grid_scores_, grid.best_params_, grid.best_score_
+
+print('LightBGM Stacking...')
+
+#Set best parameters
+params = {'boosting_type': 'gbdt',
+          'max_depth' : -1,
+          'objective': 'binary', 
+          'num_leaves': 128,
+          'learning_rate': 0.01, 
+          'subsample': 0.8, 
+          'colsample_bytree': 0.8, 
+          'min_data_in_leaf':50,
+          'is_unbalance': True,
+          'scale_pos_weight': 1,
+          'num_class' : 1,
+          'metric' : 'auc'}
+num_round=3000
+
+#Split 5 folds for stacking
+skf = StratifiedKFold(n_splits=5,shuffle=True)
+
+trainx=np.array(trainx)
+testx=np.array(testx)
+trainy=np.array(trainy)
+
+ypred=copy.copy(trainy)
+record=copy.copy(ypred)
+
+out=np.zeros(29376)
+for train_index, test_index in skf.split(trainx, trainy):
+    X_train, X_test = trainx[train_index], trainx[test_index]
+    y_train, y_test = trainy[train_index], trainy[test_index]
+    train_data = lgb.Dataset(X_train, label=y_train)
+    test_data = lgb.Dataset(X_test, label=y_test)
+    bst = lgb.train(params, train_data, num_round, valid_sets=test_data, early_stopping_rounds=50)
+    ypred[test_index] = bst.predict(X_test, num_iteration=bst.best_iteration)
+    out=out+bst.predict(testx, num_iteration=bst.best_iteration)
+record=copy.copy(ypred)
+out=out*0.2
+out1=copy.copy(out)
+
+for i in range(1):
+    out=np.zeros(29376)
+    for train_index, test_index in skf.split(trainx, trainy):
+        X_train, X_test = trainx[train_index], trainx[test_index]
+        y_train, y_test = trainy[train_index], trainy[test_index]
+        train_data = lgb.Dataset(X_train, label=y_train)
+        test_data = lgb.Dataset(X_test, label=y_test)
+        bst = lgb.train(params, train_data, num_round, valid_sets=test_data, early_stopping_rounds=50)
+        ypred[test_index] = bst.predict(X_test, num_iteration=bst.best_iteration)
+        out=out+bst.predict(data.iloc[52518:,:600], num_iteration=bst.best_iteration)
+    record=np.c_[record,ypred]
+    out=out*0.2
+    out1=np.c_[out1,copy.copy(out)]
+
+
+Stack_data=np.vstack((record,out1))
+np.savetxt("Stack_data.csv", Stack_data, delimiter=",")
+
+
+#使用250 Stack_data 預測10000次
+#將預測值標準化到0~1之間，最後全部取平均
+
+data=Stack_data
+trainx=data[:52518,:250]
+testx=data[52518:,:250]
+
+params = {'boosting_type': 'gbdt',
+          'max_depth' : -1,
+          'objective': 'binary', 
+          'num_leaves': 128,
+          'learning_rate': 0.01, 
+          'subsample': 1, 
+          'colsample_bytree': 1, 
+          'min_data_in_leaf':50,
+          'is_unbalance': True,
+          'scale_pos_weight': 1,
+          'num_class' : 1,
+          'metric' : 'auc'}
+
+num_round=5000
+
+X_train, X_test, y_train, y_test = train_test_split(trainx, trainy, test_size=0.2) #切兩等份       
+train_data = lgb.Dataset(X_train, label=y_train)
+test_data = lgb.Dataset(X_test, label=y_test)
+bst = lgb.train(params, train_data, num_round, valid_sets=test_data, early_stopping_rounds=50)
+ypred = bst.predict(testx, num_iteration=bst.best_iteration)
+
+for i in range(9999):
+    print(i)
+    X_train, X_test, y_train, y_test = train_test_split(trainx, trainy, test_size=0.2)        
+    train_data = lgb.Dataset(X_train, label=y_train)
+    test_data = lgb.Dataset(X_test, label=y_test)
+    bst = lgb.train(params, train_data, num_round, valid_sets=test_data, early_stopping_rounds=50)
+    ypred = np.c_[ypred,bst.predict(testx, num_iteration=bst.best_iteration)]
+
+
+np.savetxt("ypred10000.csv", ypred, delimiter=",")
+
+#標準化每次預測
+maxy=ypred.max(axis=0)
+miny=ypred.min(axis=0)
+rangey=maxy-miny
+ypred01=(ypred[:,0]-miny[0])/rangey[0]
+
+for i in range(9999):
+    ypred01=np.c_[ypred01,(ypred[:,i+1]-miny[i+1])/rangey[i+1]]
+
+#取平均
+ypredfinal=ypred01.mean(axis=1)
+np.savetxt("ypredfinal.csv", ypredfinal, delimiter=",")
+
+

@@ -1,0 +1,898 @@
+﻿#變數列表
+ [1] "ng1top1"                  "ng1top2"                 
+  [3] "ng1top3"                  "ng1top4"                 
+  [5] "ng1top5"                  "ng1top6"                 
+  [7] "ng1top7"                  "ng1top8"                 
+  [9] "ng1top9"                  "ng1top10"                
+ [11] "ng1top11"                 "ng1top12"                
+ [13] "ng1top13"                 "ng1top14"                
+ [15] "ng1top15"                 "ng1top16"                
+ [17] "ng1top17"                 "ng1top18"                
+ [19] "ng1top19"                 "ng1top20"                
+ [21] "ng1top21"                 "ng1top22"                
+ [23] "ng1top23"                 "ng1top24"                
+ [25] "ng1top25"                 "ng1top26"                
+ [27] "ng1top27"                 "ng1top28"                
+ [29] "ng1top29"                 "ng1top30"                
+ [31] "ng2top1"                  "ng2top2"                 
+ [33] "ng2top3"                  "ng2top4"                 
+ [35] "ng2top5"                  "ng2top6"                 
+ [37] "ng2top7"                  "ng2top8"                 
+ [39] "ng2top9"                  "ng2top10"                
+ [41] "ng2top11"                 "ng2top12"                
+ [43] "ng2top13"                 "ng2top14"                
+ [45] "ng2top15"                 "ng2top16"                
+ [47] "ng2top17"                 "ng2top18"                
+ [49] "ng2top19"                 "ng2top20"                
+ [51] "ng2top21"                 "ng2top22"                
+ [53] "ng2top23"                 "ng2top24"                
+ [55] "ng2top25"                 "ng2top26"                
+ [57] "ng2top27"                 "ng2top28"                
+ [59] "ng2top29"                 "ng2top30"                
+ [61] "ng3top1"                  "ng3top2"                 
+ [63] "ng3top3"                  "ng3top4"                 
+ [65] "ng3top5"                  "ng3top6"                 
+ [67] "ng3top7"                  "ng3top8"                 
+ [69] "ng3top9"                  "ng3top10"                
+ [71] "ng3top11"                 "ng3top12"                
+ [73] "ng3top13"                 "ng3top14"                
+ [75] "ng3top15"                 "ng3top16"                
+ [77] "ng3top17"                 "ng3top18"                
+ [79] "ng3top19"                 "ng3top20"                
+ [81] "ng3top21"                 "ng3top22"                
+ [83] "ng3top23"                 "ng3top24"                
+ [85] "ng3top25"                 "ng3top26"                
+ [87] "ng3top27"                 "ng3top28"                
+ [89] "ng3top29"                 "ng3top30"                
+ [91] "lagng1top1"               "lagng1top2"              
+ [93] "lagng1top3"               "lagng1top4"              
+ [95] "lagng1top5"               "lagng1top6"              
+ [97] "lagng1top7"               "lagng1top8"              
+ [99] "lagng1top9"               "lagng1top10"             
+[101] "lagng1top11"              "lagng1top12"             
+[103] "lagng1top13"              "lagng1top14"             
+[105] "lagng1top15"              "lagng1top16"             
+[107] "lagng1top17"              "lagng1top18"             
+[109] "lagng1top19"              "lagng1top20"             
+[111] "lagng1top21"              "lagng1top22"             
+[113] "lagng1top23"              "lagng1top24"             
+[115] "lagng1top25"              "lagng1top26"             
+[117] "lagng1top27"              "lagng1top28"             
+[119] "lagng1top29"              "lagng1top30"             
+[121] "lagng2top1"               "lagng2top2"              
+[123] "lagng2top3"               "lagng2top4"              
+[125] "lagng2top5"               "lagng2top6"              
+[127] "lagng2top7"               "lagng2top8"              
+[129] "lagng2top9"               "lagng2top10"             
+[131] "lagng2top11"              "lagng2top12"             
+[133] "lagng2top13"              "lagng2top14"             
+[135] "lagng2top15"              "lagng2top16"             
+[137] "lagng2top17"              "lagng2top18"             
+[139] "lagng2top19"              "lagng2top20"             
+[141] "lagng2top21"              "lagng2top22"             
+[143] "lagng2top23"              "lagng2top24"             
+[145] "lagng2top25"              "lagng2top26"             
+[147] "lagng2top27"              "lagng2top28"             
+[149] "lagng2top29"              "lagng2top30"             
+[151] "lagng3top1"               "lagng3top2"              
+[153] "lagng3top3"               "lagng3top4"              
+[155] "lagng3top5"               "lagng3top6"              
+[157] "lagng3top7"               "lagng3top8"              
+[159] "lagng3top9"               "lagng3top10"             
+[161] "lagng3top11"              "lagng3top12"             
+[163] "lagng3top13"              "lagng3top14"             
+[165] "lagng3top15"              "lagng3top16"             
+[167] "lagng3top17"              "lagng3top18"             
+[169] "lagng3top19"              "lagng3top20"             
+[171] "lagng3top21"              "lagng3top22"             
+[173] "lagng3top23"              "lagng3top24"             
+[175] "lagng3top25"              "lagng3top26"             
+[177] "lagng3top27"              "lagng3top28"             
+[179] "lagng3top29"              "lagng3top30"             
+[181] "minsec"                   "maxsec"                  
+[183] "varsec"                   "meansec"                 
+[185] "totallog"                 "ho=0"                    
+[187] "ho=1"                     "ho=2"                    
+[189] "ho=3"                     "ho=4"                    
+[191] "ho=5"                     "ho=6"                    
+[193] "ho=7"                     "ho=8"                    
+[195] "ho=9"                     "ho=10"                   
+[197] "ho=11"                    "ho=12"                   
+[199] "ho=13"                    "ho=14"                   
+[201] "ho=15"                    "ho=16"                   
+[203] "ho=17"                    "ho=18"                   
+[205] "ho=19"                    "ho=20"                   
+[207] "ho=21"                    "ho=22"                   
+[209] "ho=23"                    "topho0"                  
+[211] "topho1"                   "topho2"                  
+[213] "topho3"                   "topho4"                  
+[215] "topho5"                   "topho6"                  
+[217] "topho7"                   "topho8"                  
+[219] "topho9"                   "topho10"                 
+[221] "topho11"                  "topho12"                 
+[223] "topho13"                  "topho14"                 
+[225] "topho15"                  "topho16"                 
+[227] "topho17"                  "topho18"                 
+[229] "topho19"                  "topho20"                 
+[231] "topho21"                  "topho22"                 
+[233] "topho23"                  "rangesec"                
+[235] "sdsec"                    "topho1-topho2"           
+[237] "topho1-topho3"            "topho1-topho4"           
+[239] "meanho"                   "product=0374c4"          
+[241] "product=055649"           "product=05b409"          
+[243] "product=0cdb7a"           "product=20f8a5"          
+[245] "product=218578"           "product=262880"          
+[247] "product=26a5d0"           "product=3c2be6"          
+[249] "product=3ea8c3"           "product=533133"          
+[251] "product=634e6b"           "product=75f310"          
+[253] "product=7acab3"           "product=8452da"          
+[255] "product=8541a0"           "product=885fab"          
+[257] "product=8b7f69"           "product=a310bb"          
+[259] "product=aaa9c8"           "product=b93794"          
+[261] "product=c105a0"           "product=c76d58"          
+[263] "product=cc3a6a"           "product=d465fc"          
+[265] "product=dd8d4a"           "product=e47f04"          
+[267] "product=fec24f"           "percentile1"             
+[269] "percentile2"              "percentile3"             
+[271] "percentile4"              "percentile5"             
+[273] "percentile6"              "percentile7"             
+[275] "percentile8"              "percentile9"             
+[277] "datedistinctcustomertop1" "datedistinctcustomertop2"
+[279] "datedistinctcustomertop3" "datedistinctcustomertop4"
+[281] "datedistinctcustomertop5" "datedistinctcustomertop6"
+[283] "datedistinctcustomertop7" "datelogcounttop1"        
+[285] "datelogcounttop2"         "datelogcounttop3"        
+[287] "datelogcounttop4"         "datelogcounttop5"        
+[289] "datelogcounttop6"         "datelogcounttop7"        
+[291] "datenumber"               "countlog"                
+[293] "vartimediff1"             "avgtimediff1"            
+[295] "timediffcn1"              "maxtimediff1"            
+[297] "vartimediff2"             "avgtimediff2"            
+[299] "timediffcn2"              "mintimediff2"            
+[301] "maxtimediff2"             "timediffp10"             
+[303] "timediffp20"              "timediffp30"             
+[305] "timediffp40"              "timediffp50"             
+[307] "timediffp60"              "timediffp70"             
+[309] "timediffp80"              "timediffp90"             
+[311] "top1datedistinctcustomer" "top2datedistinctcustomer"
+[313] "top3datedistinctcustomer" "top4datedistinctcustomer"
+[315] "top5datedistinctcustomer" "top6datedistinctcustomer"
+[317] "top7datedistinctcustomer" "top1datecn2"             
+[319] "top2datecn2"              "top3datecn2"             
+[321] "top4datecn2"              "top5datecn2"             
+[323] "top6datecn2"              "top7datecn2"             
+[325] "top1datecn3"              "top2datecn3"             
+[327] "top3datecn3"              "top4datecn3"             
+[329] "top5datecn3"              "top6datecn3"             
+[331] "top7datecn3"              "top1datedatemaxsec"      
+[333] "top2datedatemaxsec"       "top3datedatemaxsec"      
+[335] "top4datedatemaxsec"       "top5datedatemaxsec"      
+[337] "top6datedatemaxsec"       "top7datedatemaxsec"      
+[339] "top1datedateminsec"       "top2datedateminsec"      
+[341] "top3datedateminsec"       "top4datedateminsec"      
+[343] "top5datedateminsec"       "top6datedateminsec"      
+[345] "top7datedateminsec"       "top1datedatevarsec"      
+[347] "top2datedatevarsec"       "top3datedatevarsec"      
+[349] "top4datedatevarsec"       "top5datedatevarsec"      
+[351] "top6datedatevarsec"       "top7datedatevarsec"      
+[353] "top1datedateavgsec"       "top2datedateavgsec"      
+[355] "top3datedateavgsec"       "top4datedateavgsec"      
+[357] "top5datedateavgsec"       "top6datedateavgsec"      
+[359] "top7datedateavgsec"       "top1datern1"             
+[361] "top2datern1"              "top3datern1"             
+[363] "top4datern1"              "top5datern1"             
+[365] "top6datern1"              "top7datern1"             
+[367] "top1datep10"              "top2datep10"             
+[369] "top3datep10"              "top4datep10"             
+[371] "top5datep10"              "top6datep10"             
+[373] "top7datep10"              "top1datep20"             
+[375] "top2datep20"              "top3datep20"             
+[377] "top4datep20"              "top5datep20"             
+[379] "top6datep20"              "top7datep20"             
+[381] "top1datep30"              "top2datep30"             
+[383] "top3datep30"              "top4datep30"             
+[385] "top5datep30"              "top6datep30"             
+[387] "top7datep30"              "top1datep40"             
+[389] "top2datep40"              "top3datep40"             
+[391] "top4datep40"              "top5datep40"             
+[393] "top6datep40"              "top7datep40"             
+[395] "top1datep50"              "top2datep50"             
+[397] "top3datep50"              "top4datep50"             
+[399] "top5datep50"              "top6datep50"             
+[401] "top7datep50"              "top1datep60"             
+[403] "top2datep60"              "top3datep60"             
+[405] "top4datep60"              "top5datep60"             
+[407] "top6datep60"              "top7datep60"             
+[409] "top1datep70"              "top2datep70"             
+[411] "top3datep70"              "top4datep70"             
+[413] "top5datep70"              "top6datep70"             
+[415] "top7datep70"              "top1datep80"             
+[417] "top2datep80"              "top3datep80"             
+[419] "top4datep80"              "top5datep80"             
+[421] "top6datep80"              "top7datep80"             
+[423] "top1datep90"              "top2datep90"             
+[425] "top3datep90"              "top4datep90"             
+[427] "top5datep90"              "top6datep90"             
+[429] "top7datep90"              "clurangetime"            
+[431] "clucdate"                 "clucho"                  
+[433] "clucC1"                   "clucn"                   
+[435] "clucclu"                  "minrangetime"            
+[437] "maxangetime"              "avgrangetime"            
+[439] "mincdate"                 "maxcdate"                
+[441] "avgcdate"                 "mincho"                  
+[443] "maxcho"                   "avgcho"                  
+[445] "mincC1"                   "maxcC1"                  
+[447] "avgcC1"                   "mincn"                   
+[449] "maxcn"                    "avgcn"                   
+[451] "minminho"                 "maxminho"                
+[453] "avgminho"                 "minminsec"               
+[455] "maxminsec"                "avgminsec"               
+[457] "minmaxho"                 "maxmaxho"                
+[459] "avgmaxho"                 "minmaxsec"               
+[461] "maxmaxsec"                "avgmaxsec"    
+
+#變數意義:
+(所有變數皆從原始log以file為分割算出)
+ng1top1~ng1top30: customer 1-gram top 30 (正整數)
+ng2top1~ng2top30: customer 2-gram top 30 (正整數)
+ng3top1~ng3top30: customer 3-gram top 30 (正整數)
+lagng1top1~lagng1top30: file 1-gram top 30 (正整數)
+lagng2top1~lagng2top30: file 2-gram top 30 (正整數)
+lagng3top1~lagng3top30: file 3-gram top 30 (正整數)
+(創造sec: QueryT 轉換成天內秒單位 0~86400)
+minsec
+maxsec
+varsec
+meansec
+totallog: log數
+(創造hour: QueryT 轉換成天內小時單位 0~23)
+ho=0~ho=23:各小時的log數
+topho0~topho23: ho0~ho23的排序
+rangesec
+sdsec
+topho1-topho2
+topho1-topho3
+topho1-topho4
+meanho:ho0~ho23的平均
+product=0374c4~product=fec24f:各product的log數
+percentile1~ percentile9:sec的10%~90%百分位數
+datedistinctcustomertop1~datedistinctcustomertop7:一天內有多少個不同的customer (七天，按大小排序，不一定所有的file都有七天，最少有三天)
+datelogcounttop1~datelogcounttop7:一天內有多少個log
+datenumber:log數出現幾個不同天
+countlog:log總數
+(創造timediff1，timediff2為與前一個和前兩個log的時間差)
+(timediff系列的變數，為了讓數值差距不要過大只考慮timediff<3600的log)
+vartimediff1
+avgtimediff1
+timediffcn1:log數
+maxtimediff1
+vartimediff2
+avgtimediff2
+timediffcn2:log數
+maxtimediff2
+mintimediff2
+timediffp10~timediff90:timediff1的10%~90%百分位數
+
+top1datedistinctcustomer~top7datedistinctcustomer:datedistinctcustomertop1~datedistinctcustomertop7按log數大小排序七天各天的不同customer數
+
+top1datecn2~top7datecn2:各天log數 按大小排序 各天的log數
+top1datecn3~top7datecn3:各天log數 按大小排序 各天的不同product數
+
+top1datedatemaxsec~top7datedatemaxsec:按log數大小排序七天各天的maxsec
+top1datedateminsec~top7datedateminsec:按log數大小排序七天各天的minsec
+top1datedatevarsec~top7datedatevarsec:按log數大小排序七天各天的varsec
+top1datedateavgsec~top7datedateavgsec:按log數大小排序七天各天的avgsec
+top1datern1~top1datern7:按log數大小排序七天各天的不同customer數的排名
+
+按log數大小排序七天各天的sec的百分位數
+top1datep10~top7datep10
+top1datep20~top7datep20
+top1datep30~top7datep30
+top1datep40~top7datep40
+top1datep50~top7datep50
+top1datep60~top7datep60
+top1datep70~top7datep70
+top1datep80~top7datep80
+top1datep90~top7datep90
+
+(創造cluster，以timediff>3600為切點，因此每個file的log會被切為若干群)
+clurangetime:最大的(log數最多)cluster的rangetime
+clucdate:最大的(log數最多)cluster有幾個不同天
+clucho:最大的(log數最多)cluster有幾個不同小時
+clucC1:最大的(log數最多)cluster有幾個不同customer
+clucn:最大的(log數最多)cluster的log
+clucclu:有幾個cluster
+minrangetime:所有cluster的rangetime的最小值
+maxangetime:所有cluster的rangetime的最大值
+avgrangetime:所有cluster的rangetime的平均值
+mincdate:所有cluster有幾個不同天的最小值
+maxcdate:所有cluster有幾個不同天的最大值
+avgcdate:所有cluster有幾個不同天的平均值
+mincho:所有cluster有幾個不同小時的最小值
+maxcho:所有cluster有幾個不同小時的最大值
+avgcho:所有cluster有幾個不同小時的平均值
+mincC1:所有cluster有幾個不同customer的最小值
+maxcC1:所有cluster有幾個不同customer的最大值
+avgcC1:所有cluster有幾個不同customer的平均值
+mincn:所有cluster的log的最小值
+maxcn:所有cluster的log的最大值
+avgcn:所有cluster的log的平均值
+minminho:所有cluster的minho的最小值
+maxminho:所有cluster的minho的最大值
+avgminho:所有cluster的minho的平均值      
+minminsec:所有cluster的minsec的最小值
+maxminsec:所有cluster的minsec的最大值
+avgminsec:所有cluster的minsec的平均值
+minmaxmaxho:所有cluster的maxmaxho的最小值
+maxmaxmaxho:所有cluster的maxmaxho的最大值
+avgmaxmaxho:所有cluster的maxmaxho的平均值       
+minmaxsec:所有cluster的maxsec的最小值
+maxmaxsec:所有cluster的maxsec的最大值
+avgmaxec:所有cluster的maxsec的平均值            
+             
+              
+#變數創造方法
+
+Step0.工具準備
+	SQL server2012 (建議2012版以後，會有一些很有用的function 如lag等)
+	R (x64 3.4.3)
+	Python (anaconda3)
+
+Step1.資料準備
+	#CMD
+		cd d yourpath
+		copy *.csv data.csv
+	匯入SQL資料庫
+
+Step2.創造CustomerID FileID的dummy code
+	#Excel
+		trainning-set.csv,testing-set.csv合併為F1.csv
+		拉出新的一欄1,2...,81894作為FileID的dummy code	
+	#SQL
+		select distinct CustomerID from data	
+	匯出至C1.csv
+	#R
+		C1=read.csv("C1.csv",header=T,sep=",")
+		C1=cbind(C1,c(1:nrow(C1)))
+		write.csv("C1.csv")
+	匯入F1.csv,C1.csv
+
+Step3.合併dummy code
+	select F1.F1,C1.C1,data.ProductID,data.QueryTS
+	into data2
+	left join F1 on data.FileID=F1.FileID
+	left join C1 on data.CustomerID=C1.CustomerID
+
+Step4.創造hour 和sec
+	alter table data2 add column ho as floor((Query-floor(QueryTS/86400)*86400)/3600)
+	alter table data2 add column sec as Query-floor(QueryTS/86400)*86400
+	alter table data2 add column date as floor(QueryTS/86400)*86400)
+
+Step0.~Step4.整理後的資料長這樣:
+F1	C1	QueryTS	ProductID	ho	sec	date
+45894	2169516	1.488326E+09	c105a0	0	0	17226
+8502	1934942	1.488326E+09	c105a0	0	0	17226
+51405	641805	1.488326E+09	c105a0	0	0	17226
+15072	2003271	1.488326E+09	c76d58	0	0	17226
+...
+
+
+Step5.創造變數集
+#用SQL創造以下這些變數集 注意到每做一個查詢輸出成excel一定要照F1排序
+	total.csv,
+	ng1.csv,
+	ng2.csv,
+	ng3.csv
+	lagng1.csv
+	lagng2.csv
+	lagng3.csv
+	feature1.csv
+	feature1product.csv
+	feature2percentile.csv
+	feature3date.csv
+	feature4timediff.csv
+	feature5timediffper.csv
+	feature6date.csv
+	feature7clu.csv
+
+#total.csv
+	select F1,count(*) as totallog
+	from data2
+	group by F1
+
+	創造lag變數
+	select F1,C1,QueryTS,
+	lag(C1,1,0)over (partition by F1 order by QueryTS) as C1lag1,
+	lag(C1,2,0)over (partition by F1 order by QueryTS) as C1lag2,
+
+	lag(F1,1,0)over (partition by F1 order by QueryTS) as F1lag1,
+	lag(F1,2,0)over (partition by F1 order by QueryTS) as F1lag2,
+	lag(F1,3,0)over (partition by F1 order by QueryTS) as F1lag3,
+	into ngdata
+	from data2
+
+	準備ng1~ng3 和lagng1~lagng3系列特徵
+	select x.*,row_number()over(partition by F1,C1 order by cn desc) as rn
+	into ng1
+	from(
+	select F1,C1,count(*) as cn
+	group by F1,C1)x
+
+	select x.*,row_number()over(partition by F1,C1,C1lag1 order by cn desc) as rn
+	into ng2
+	from(
+	select F1,C1,C1lag1,count(*) as cn
+	group by F1,C1,C1lag1)x
+
+	select x.*,row_number()over(partition by F1,C1,C1lag1 order by cn desc) as rn
+	into ng3
+	from(
+	select F1,C1,C1lag1,C1lag2,count(*) as cn
+	group by F1,C1,C1lag1,C1lag2)x
+
+	select x.*,row_number()over(partition by F1,F1lag1 order by cn desc) as rn
+	into lagng1
+	from(
+	select F1,C1,count(*) as cn
+	group by F1,F1lag1)x
+
+	select x.*,row_number()over(partition by F1,F1lag1,F1lag2 order by cn desc) as rn
+	into lagng2
+	from(
+	select F1,C1,C1lag1,count(*) as cn
+	group by F1,F1lag1,F1lag2)x
+
+	select x.*,row_number()over(partition by F1,F1lag1,F1lag2,F1lag3 order by cn desc) as rn
+	into lagng3
+	from(
+	select F1,F1lag1,F1lag2,F1lag3,count(*) as cn
+	group by F1,F1lag1,F1lag2,F1lag3)x
+
+	匯出ng1~ng3,lagng1~lagng3只取top30
+	(取的方法 select F1,cn,rn from yourtable where rn<=30)
+	
+#feature1.csv
+	select min(sec) as minsec,max(sec) as maxsec,var(sec)as varsec,avg(sec) as meansec,count(*)as totallog
+	from data2
+	group by F1
+
+	select F1,
+	sum(case when ho=0 then 1 else 0) as ho=0,
+	sum(case when ho=1 then 1 else 0) as ho=0,
+	sum(case when ho=2 then 1 else 0) as ho=0,
+	sum(case when ho=3 then 1 else 0) as ho=0,
+	sum(case when ho=4 then 1 else 0) as ho=0,
+	sum(case when ho=5 then 1 else 0) as ho=0,
+	sum(case when ho=6 then 1 else 0) as ho=0,
+	sum(case when ho=7 then 1 else 0) as ho=0,
+	sum(case when ho=8 then 1 else 0) as ho=0,
+	sum(case when ho=9 then 1 else 0) as ho=0,
+	sum(case when ho=10 then 1 else 0) as ho=0,
+	sum(case when ho=11 then 1 else 0) as ho=0,
+	sum(case when ho=12 then 1 else 0) as ho=0,
+	sum(case when ho=13 then 1 else 0) as ho=0,
+	sum(case when ho=14 then 1 else 0) as ho=0,
+	sum(case when ho=15 then 1 else 0) as ho=0,
+	sum(case when ho=16 then 1 else 0) as ho=0,
+	sum(case when ho=17 then 1 else 0) as ho=0,
+	sum(case when ho=18 then 1 else 0) as ho=0,
+	sum(case when ho=19 then 1 else 0) as ho=0,
+	sum(case when ho=20 then 1 else 0) as ho=0,
+	sum(case when ho=21 then 1 else 0) as ho=0,
+	sum(case when ho=22 then 1 else 0) as ho=0,
+	sum(case when ho=23 then 1 else 0) as ho=0
+	from data2
+	group by F1
+
+
+	feature1product.csv
+	select F1,ProductID,cn
+	from data2
+	group by F1,ProductID
+
+
+#feature2percentile.csv
+	SELECT distinct F1,
+	PERCENTILE_CONT(0.1)within group (ORDER BY sec)OVER (PARTITION BY f1) as p10,
+	PERCENTILE_CONT(0.2)within group (ORDER BY sec)OVER (PARTITION BY f1) as p20,
+	PERCENTILE_CONT(0.3)within group (ORDER BY sec)OVER (PARTITION BY f1) as p30,
+	PERCENTILE_CONT(0.4)within group (ORDER BY sec)OVER (PARTITION BY f1) as p40,
+	PERCENTILE_CONT(0.5)within group (ORDER BY sec)OVER (PARTITION BY f1) as p50,
+	PERCENTILE_CONT(0.6)within group (ORDER BY sec)OVER (PARTITION BY f1) as p60,
+	PERCENTILE_CONT(0.7)within group (ORDER BY sec)OVER (PARTITION BY f1) as p70,
+	PERCENTILE_CONT(0.8)within group (ORDER BY sec)OVER (PARTITION BY f1) as p80,
+	PERCENTILE_CONT(0.9)within group (ORDER BY sec)OVER (PARTITION BY f1) as p90
+	FROM data2
+
+
+#feature3date.csv
+	select 
+	F1,
+	row_number() over(partition by F1 order by cn1 desc) as rn1,
+	cn1,
+	row_number() over(partition by F1 order by cn2 desc) as rn2,
+	cn2
+	from (
+	SELECT F1,date,count(distinct C1) as cn1,count(*) as cn2
+	 FROM data2
+	group by F1,date
+	)x
+
+
+#feature4timediff.csv
+
+	select F1,QueryTS,lag(QueryTS,1,0)over(partition by F1 order by QueryTS)as lagQueryTS
+	into data3
+	from data2
+
+	alter table data3 add column timediff as QueryTS-lagQueryTS
+
+	SELECT F1,var(timediff) as vartimediff,avg(timediff) as avgtimediff,count(*) as cn1,
+	min(timediff) as mintimediff,max(timediff) as maxtimediff
+	FROM data3
+	where timediff>=3600 and lagQueryTS>0
+	group by F1
+
+#feature5timediffper.csv
+	SELECT distinct F1,
+	PERCENTILE_CONT(0.1)within group (ORDER BY timdiff)OVER (PARTITION BY F1) as p10,
+	PERCENTILE_CONT(0.2)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p20,
+	PERCENTILE_CONT(0.3)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p30,
+	PERCENTILE_CONT(0.4)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p40,
+	PERCENTILE_CONT(0.5)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p50,
+	PERCENTILE_CONT(0.6)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p60,
+	PERCENTILE_CONT(0.7)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p70,
+	PERCENTILE_CONT(0.8)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p80,
+	PERCENTILE_CONT(0.9)within group (ORDER BY timediff)OVER (PARTITION BY F1) as p90
+	FROM data3
+	where lagQueryTS>0
+
+
+#feature6date.csv
+	select x.*,row_number() over(partition by F1 order by cn1 desc) as rn1,
+	row_number() over(partition by F1 order by cn2 desc) as rn2
+	from(
+	SELECT F1,[date],
+	count(distinct C1) as cn1,
+	count(*) as cn2,
+	count(distinct ProductID) as cn3,
+	max(sec) as datemaxsec,
+	min(sec) as dateminsec,
+	var(sec) as datevarsec,
+	avg(sec) as dateavgsec
+	 FROM data2
+	group by F1,[date])x
+
+
+	SELECT distinct F1,[date],
+	PERCENTILE_CONT(0.1)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p10,
+	PERCENTILE_CONT(0.2)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p20,
+	PERCENTILE_CONT(0.3)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p30,
+	PERCENTILE_CONT(0.4)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p40,
+	PERCENTILE_CONT(0.5)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p50,
+	PERCENTILE_CONT(0.6)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p60,
+	PERCENTILE_CONT(0.7)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p70,
+	PERCENTILE_CONT(0.8)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p80,
+	PERCENTILE_CONT(0.9)within group (ORDER BY sec)OVER (PARTITION BY F1,[date]) as p90
+	FROM data2
+
+
+
+
+#feature7clu.csv
+	select *,
+	sum(case when timediff>3600 then 1 else 0 end) 
+	over(partition by F1 order by QueryTS ROWS UNBOUNDED PRECEDING)
+	as clust
+	into dataclu
+	from data2
+
+	SELECT F1,clust,
+	max(QueryTS)-min(QueryTS) as rangetime,
+	count(distinct [date])as cdate,
+	min(QueryTS)as minQueryTS,
+	max(QueryTS)as maxQueryTS,
+	count(distinct [ho])as cho,
+	count(distinct [C1])as cC1,
+	count(*)as cn
+	into datacluq1
+	FROM dataclu
+	group by F1,clust
+
+	SELECT 
+	F1,
+	min(rangetime) as minrangetime,
+	max(rangetime) as maxangetime,
+	avg(rangetime) as avgrangetime,
+
+	min(cdate) as mincdate,
+	max(cdate) as maxcdate,
+	avg(cdate) as avgcdate,
+
+	min(cho) as mincho,
+	max(cho) as maxcho,
+	avg(cho) as avgcho,
+
+	min(cC1) as mincC1,
+	max(cC1) as maxcC1,
+	avg(cC1) as avgcC1,
+
+	min(cn) as mincn,
+	max(cn) as maxcn,
+	avg(cn) as avgcn,
+
+	min(minho) as minminho,
+	max(minho) as maxminho,
+	avg(minho) as avgminho,
+
+	min(minsec) as minminsec,
+	max(minsec) as maxminsec,
+	avg(minsec) as avgminsec,
+
+	min(maxho) as minmaxho,
+	max(maxho) as maxmaxho,
+	avg(maxho) as avgmaxho,
+
+	min(maxsec) as minmaxsec,
+	max(maxsec) as maxmaxsec,
+	avg(maxsec) as avgmaxsec
+	FROM datacluq1
+	group by F1
+
+
+Step6.整理與合併變數集
+#R
+	library('Matrix')
+	setwd("yourpath")
+	total=read.table("total.csv",sep=",",header=TRUE)
+	total=total=sparseMatrix(i=c(1:81894),j=rep(1,81894),x=total[,2],dims=c(81894,1))
+
+	ng1=read.table("ng1.csv",sep=",",header=TRUE)
+	ng1=ng1[-1,]
+	ng1[,1]=as.numeric(as.character(ng1[,1]))
+	A=sparseMatrix(i=ng1[,1],j=ng1[,3],x=ng1[,2],dims=c(81894,30))
+	A1=A
+
+	name=c()
+	for(i in 1:30)
+	{
+	name=c(name,paste0("ng1top",i))
+	}
+
+	ng1=read.table("ng2.csv",sep=",",header=TRUE)
+	ng1=ng1[-1,]
+	ng1[,1]=as.numeric(as.character(ng1[,1]))
+	A=sparseMatrix(i=ng1[,1],j=ng1[,3],x=ng1[,2],dims=c(81894,30))
+	A2=A
+	for(i in 1:30)
+	{
+	name=c(name,paste0("ng2top",i))
+	}
+
+
+	ng1=read.table("ng3.csv",sep=",",header=TRUE)
+	ng1=ng1[-1,]
+	ng1[,1]=as.numeric(as.character(ng1[,1]))
+	A=sparseMatrix(i=ng1[,1],j=ng1[,3],x=ng1[,2],dims=c(81894,30))
+	A3=A
+	for(i in 1:30)
+	{
+	name=c(name,paste0("ng3top",i))
+	}
+
+
+	ng1=read.table("lagng1.csv",sep=",",header=TRUE)
+	ng1=ng1[-1,]
+	ng1[,1]=as.numeric(as.character(ng1[,1]))
+	A=sparseMatrix(i=ng1[,1],j=ng1[,3],x=ng1[,2],dims=c(81894,30))
+	A4=A
+	for(i in 1:30)
+	{
+	name=c(name,paste0("lagng1top",i))
+	}
+
+	ng1=read.table("lagng2.csv",sep=",",header=TRUE)
+	ng1=ng1[-1,]
+	ng1[,1]=as.numeric(as.character(ng1[,1]))
+	A=sparseMatrix(i=ng1[,1],j=ng1[,3],x=ng1[,2],dims=c(81894,30))
+	A5=A
+	for(i in 1:30)
+	{
+	name=c(name,paste0("lagng2top",i))
+	}
+
+	ng1=read.table("lagng3.csv",sep=",",header=TRUE)
+	ng1=ng1[-1,]
+	ng1[,1]=as.numeric(as.character(ng1[,1]))
+	A=sparseMatrix(i=ng1[,1],j=ng1[,3],x=ng1[,2],dims=c(81894,30))
+	A6=A
+	for(i in 1:30)
+	{
+	name=c(name,paste0("lagng3top",i))
+	}
+
+	feature1=read.table("feature1.csv",sep=",",header=FALSE)
+	feature1[is.na(feature1[,3]),3]=feature1[is.na(feature1[,3]),4]
+	feature1=as.matrix(feature1)
+
+	name=c(name,"minsec","maxsec","varsec","meansec","totallog")
+	for(i in 0:23)
+	{
+	name=c(name,paste0("ho=",i))
+	}
+
+	temp1=t(apply(feature1[,6:29], 1, sort))
+	temp2=apply(feature1[,6:29], 1, mean)
+
+	for(i in 0:23)
+	{
+	name=c(name,paste0("topho",i))
+	}
+
+
+
+	feature1=as(feature1,"sparseMatrix")
+
+	feature1=cBind(feature1,feature1[,2]-feature1[,1],sqrt(feature1[,3]),temp1,temp1[,24]-temp1[,23],temp1[,24]-temp1[,22],temp1[,24]-temp1[,21],temp2)
+	name=c(name,"rangesec","sdsec")
+
+	name=c(name,"topho1-topho2","topho1-topho3","topho1-topho4","meanho")
+
+	feature1product=read.table("feature1product.txt",sep="\t",header=TRUE)
+	feature1product[,1]=as.numeric(as.character(feature1product[,1]))
+	feature1product=na.omit(feature1product)
+	name=c(name,paste0("product=",levels(feature1product[,2])[-1]))
+	feature1product[,2]=as.numeric(feature1product[,2])
+
+	feature1product=
+	sparseMatrix(i=feature1product[,1],j=feature1product[,2],x=feature1product[,3],dims=c(81894,29))
+	feature1product=feature1product[,-1]
+
+	feature2percentile=read.table("feature2percentile.csv",sep=",",header=FALSE)
+	feature2percentile=as.matrix(feature2percentile)
+	for(i in 1:9)
+	{
+	name=c(name,paste0("percentile",i))
+	}
+
+	feature3date=read.table("feature3date.csv",sep=",",header=TRUE)
+	head(feature3date)
+	feature3date=feature3date[-1,]
+	feature3date[,1]=as.numeric(as.character(feature3date[,1]))
+
+
+
+	feature3date=
+	cBind(sparseMatrix(i=feature3date[,1],j=feature3date[,5],x=feature3date[,3],dims=c(81894,7)),
+	sparseMatrix(i=feature3date[,1],j=feature3date[,6],x=feature3date[,4],dims=c(81894,7)),
+	as.numeric(table(feature3date[,1]))
+	)
+
+	for(i in 1:7)
+	{
+	name=c(name,paste0("datedistinctcustomertop",i))
+	}
+	for(i in 1:7)
+	{
+	name=c(name,paste0("datelogcounttop",i))
+	}
+
+	name=c(name,"datenumber","countlog")
+
+
+	feature4timediff=read.table("feature4timediff=.csv",sep=",",header=TRUE)
+	feature4timediff=feature4timediff[,-1]
+	name=c(name,colnames(feature4timediff))
+	feature4timediff=as.matrix(feature4timediff)
+
+	feature5timediffper=read.table("feature5timediffper.csv",sep=",",header=TRUE)
+	colnames(feature5timediffper)[1]="file"
+	feature5timediffper=merge(feature5timediffper,data.frame(file=c(1:81894)),by="file",
+	all=TRUE)
+	feature5timediffper[is.na(feature5timediffper)]=-1
+	feature5timediffper=feature5timediffper[,-1]
+	colnames(feature5timediffper)=paste0("timediff",colnames(feature5timediffper))
+	feature5timediffper=as.matrix(feature5timediffper)
+
+	name=c(name,colnames(feature5timediffper))
+
+
+	feature6date=read.table("feature6date.csv",sep=",",header=TRUE)
+	feature6date=feature6date[!is.na(feature6date[,1]),]
+
+	temp=sparseMatrix(i=feature6date$F1,j=feature6date$rn2,x=feature6date$cn1,dims=c(81894,7))
+	for(j in 1:7)
+	{
+	name=c(name,paste0("top",j,"datedistinctcustomer"))
+	}
+	for(i in c(4:10,12:20))
+	{
+	temp=cBind(temp,sparseMatrix(i=feature6date$F1,j=feature6date$rn2,x=feature6date[,i],dims=c(81894,7)))
+	for(j in 1:7)
+	{
+	name=c(name,paste0("top",j,"date",colnames(feature6date)[i]))
+	}
+	}
+	feature6date=temp
+
+	feature7clu=read.table("feature7clu.csv",sep=",",header=TRUE)
+	feature7clu=feature7clu[-1,]
+	feature7clu=feature7clu[feature7clu$rn==1,]
+	feature7clu2=read.table("0306data2.csv",sep=",",header=TRUE)
+	feature7clu2=feature7clu2[-1,]
+
+	feature7clu=cbind(feature7clu$rangetime,feature7clu$cdate,
+	feature7clu$cho,feature7clu$cC1,feature7clu$cn,feature7clu2[,2])
+	name=c(name,"clurangetime","clucdate","clucho","clucC1","clucn","clucclu")
+
+	A=cBind(A1,A2,A3,A4,A5,A6,
+
+	feature1,
+	feature1product,
+	feature2percentile,
+	feature3date,
+	total,
+	feature4timediff,
+	feature5timediffper,
+	feature6date,
+	feature7clu
+	)
+
+	colnames(A)=name
+
+
+
+#變數轉換，將A矩陣(462個feature)轉換成4620個feature
+#SQL#feature8customer.csv
+	select distinct F1,C1 from data2
+
+#R
+	library('Matrix')
+	setwd("yourpath")
+
+	normmatrix=function(A)
+	{
+	Ar=rowSums(A)
+	indAr=c(1:nrow(A))[Ar!=0]
+	Ar=sparseMatrix(i=indAr,j=indAr,x=1/Ar[indAr],dims=c(nrow(A),nrow(A)))
+	return(Ar%*%A)
+	}
+
+
+	feature8customer=read.table("feature8customer.csv",sep=",",header=TRUE)
+	feature8customer=feature8customer[-1,]
+	summary(feature8customer)
+	feature8customer=sparseMatrix(i=feature8customer[,1],j=feature8customer[,2],x=1,dims=c(81894,5539312))
+
+	temp1=normmatrix(feature8customer)
+	temp2=normmatrix(t(feature8customer))
+	rm(feature8customer)
+	gc()
+
+
+
+	for(k in 2:10)
+	{
+	new=A[,1:50]
+	new1=temp2%*%new
+	B=temp1%*%new1
+
+	for(i in 1:8)
+	{
+	new=A[,(1+i*50):((i+1)*50)]
+	new1=temp2%*%new
+	B=cBind(B,temp1%*%new1)
+	print(i)
+	}
+
+	new=A[,451:462]
+	new1=temp2%*%new
+	B=cBind(B,temp1%*%new1)
+	rm(new,new1)
+	gc()
+
+	name=paste0("A",k,".rda")
+	save(B,file=name)
+	A=B
+	}
+	#combind A,A2,A3,...,A10 得到4620個feature
